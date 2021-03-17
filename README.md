@@ -1,3 +1,3 @@
 # BOOKFLIX MVP
 
-React App
+Practicing ReactJS.
