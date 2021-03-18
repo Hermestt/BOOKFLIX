@@ -1,35 +1,49 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import Jumbotron from "react-bootstrap/Jumbotron";
 import "./Footer.css";
 
 function Footer() {
   return (
-    <div id="footer">
-      <h5>BOOKFLIX</h5>
-      <p>
-        BOOKFLIX is a MVP of a React Web App, created with the intention to
-        learn and improve my skills on building React Web Apps and Software
-        Development. <br /> Improvements will be done in the future, so feel
-        free to pass by and check them out.
-      </p>
-      <p>
-        Visit my github profile at{" "}
-        <a href="https://github.com/Hermestt" rel="noreferrer" target="_blank">
-          @Hermestt
-        </a>
-      </p>
-      <p>
-        The books and information in this website is being fetched from{" "}
-        <a
-          href="https://openlibrary.org/developers/api"
-          className="link-primary"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Open Library API
-        </a>
-        .
-      </p>
-    </div>
+    <Jumbotron fluid id={"footer"}>
+      <Container>
+        <h4>BOOKFLIX</h4>
+        <p className="project-description">
+          BOOKFLIX is a MVP of a React Web App, created with the intention to
+          learn and improve my skills on building React Web Apps and Software
+          Development. Improvements will be done in the future, so feel free to
+          pass by and check them out.
+        </p>
+        <p className="github-links">
+          Visit the GitHub Repository{" "}
+          <a
+            href="https://github.com/Hermestt/BOOKFLIX"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            here
+          </a>{" "}
+          or my profile at{" "}
+          <a
+            href="https://github.com/Hermestt/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            @Hermestt
+          </a>
+        </p>
+        <p>
+          The books and information provided are property of{" "}
+          <a
+            href="https://openlibrary.org/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Open Library API.
+          </a>
+        </p>
+      </Container>
+    </Jumbotron>
   );
 }
 

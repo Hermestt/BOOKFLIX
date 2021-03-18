@@ -1,43 +1,45 @@
-h4{
+.slick-prev::before,
+.slick-next::before {
+  color: black;
+}
+
+.topic-heading {
   text-transform: capitalize;
-}
-.list-container{
-  margin-top: 40px;
-}
-.scroll-container {
-  overflow-x: scroll;
+  margin-bottom: 32px;
 }
 
-.book-list {
+.topic-container {
+  margin-bottom: 62px;
+}
+
+.cover-container {
+  height: 158px;
   display: flex;
-  padding: 16px;
+  justify-content: center;
 }
-
-.book-list-item {
-  display: inline-block;
-}
-
-.book-list-item_container {
-  margin-right: 16px;
-  width: 158px;
-  height: 200px;
-  transition: all 250ms;
-  text-align: center;
-  overflow: hidden;
-  border-radius: 4px;
-}
-
-.book-list-item_cover {
-  object-fit: contain;
+.cover-container > img {
+  background-image: url("/src/Components/unnamed.jpg");
+  background-size: contain;
   height: 100%;
+  width: auto;
 }
-
-.book-list-item_container:hover {
-  transform: scale(1.08);
+.cover-container > img:hover {
   cursor: pointer;
 }
 
-.book-list-item_container.is-selected {
-  transform: scale(1.08);
-  box-shadow: 0 .5rem 1rem rgba(89, 0, 255, 0.34) !important;
+.book-list-item_container > p {
+  max-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* BELOW 1024 */
+/* No nível mais abrangente do código */
+@media screen and (max-width: 1023px) {
+  button.slick-arrow {
+    display: none !important;
+  }
 }

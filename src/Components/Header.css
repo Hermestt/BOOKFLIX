@@ -1,9 +1,10 @@
-.ribbon {
-    padding: 4px 8px;
-    background-color: blue;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+@media (min-width: 992px) {
+  figure {
+    max-width: 60%;
+    text-align: left !important;
+  }
+}
+
+figure {
+  text-align: center;
 }

@@ -15,12 +15,14 @@ const newBook = {
   title: "string name",
   cover: "cover-id",
   description: "description goes here",
+  subjects: [],
 };
 function bookNormalizer(book, cover) {
   newBook.id = book.key.slice(7);
   newBook.title = book.title;
   newBook.cover = cover;
   newBook.description = checkDescription(book);
+  newBook.subjects = book.subjects.slice(0, 3);
   return newBook;
 }
 
