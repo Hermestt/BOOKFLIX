@@ -19,7 +19,7 @@ function App() {
       <Navbar bg="light">
         <Container>
           <Navbar.Brand href="#home" className="text-primary">
-            BOOKFLIX
+            BOOKPRIME
           </Navbar.Brand>
         </Container>
       </Navbar>
