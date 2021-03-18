@@ -7,17 +7,17 @@ function Footer() {
   return (
     <Jumbotron fluid id={"footer"}>
       <Container>
-        <h4>BOOKFLIX</h4>
+        <h4>BOOKPRIME</h4>
         <p className="project-description">
-          BOOKFLIX is a MVP of a React Web App, created with the intention to
-          learn and improve my skills on building React Web Apps and Software
+          BOOKPRIME is a MVP of a React Web App, created with the intention to
+          learn and improve my skills on building React Wyeb Apps and Software
           Development. Improvements will be done in the future, so feel free to
           pass by and check them out.
         </p>
         <p className="github-links">
           Visit the GitHub Repository{" "}
           <a
-            href="https://github.com/Hermestt/BOOKFLIX"
+            href="https://github.com/Hermestt/BOOKPRIME"
             target="_blank"
             rel="noreferrer noopener"
           >
